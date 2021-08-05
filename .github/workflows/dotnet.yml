@@ -18,6 +18,6 @@ jobs:
     - name: Setup NuGet.exe for use with actions
       uses: NuGet/setup-nuget@v1.0.5
     - name: restore packages
-      run: nuget restore ConsoleApp.sln
+      run: nuget restore ConsoleApp/ConsoleApp.sln
     - name: build soln
-      run: msbuild ConsoleApp.sln
+      run: msbuild ConsoleApp/ConsoleApp.sln
