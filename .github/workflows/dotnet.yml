@@ -22,4 +22,6 @@ jobs:
     - name: build soln
       run: msbuild ConsoleApp/ConsoleApp.sln
     - name: Test
-      run: dotnet test
+      run: |
+       cd ConsoleApp
+       dotnet test
