@@ -21,3 +21,5 @@ jobs:
       run: nuget restore ConsoleApp/ConsoleApp.sln
     - name: build soln
       run: msbuild ConsoleApp/ConsoleApp.sln
+    - name: Test
+      run: dotnet test
